@@ -1,3 +1,12 @@
 {
-  "no_data": "Không có dữ liệu"
+  "no_data": "Không có dữ liệu",
+  "signup": "Đăng ký",
+  "user_account": "Tên đăng nhập",
+  "referral_code": "Mã giới thiệu",
+  "phone_number": "Số điện thoại",
+  "enter_referral_code": "Nhập mã giới thiệu",
+  "forgot_password": "Quên mật khẩu?",
+  "sign_in": "Đăng nhập",
+  "input_OTP": "Nhập mã OTP",
+  "otp_is_send_to_the_phone": "Mã OTP được gửi về số điện thoại KH đăng ký"
 }

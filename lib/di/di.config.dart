@@ -19,17 +19,25 @@ import 'package:lpb_insurance/data/data_source/local/pref/shared_preferences_man
 import 'package:lpb_insurance/data/data_source/services/api_service.dart'
     as _i669;
 import 'package:lpb_insurance/data/repositories/login_repo_impl.dart' as _i760;
+import 'package:lpb_insurance/data/repositories/sign_up_impl.dart' as _i546;
 import 'package:lpb_insurance/di/environment/build_config.dart' as _i138;
 import 'package:lpb_insurance/di/environment/build_config_prod.dart' as _i212;
 import 'package:lpb_insurance/di/environment/build_config_uat.dart' as _i951;
 import 'package:lpb_insurance/di/module/conponents_module.dart' as _i95;
 import 'package:lpb_insurance/di/module/network_module.dart' as _i934;
 import 'package:lpb_insurance/domain/repositories/login_repository.dart' as _i6;
+import 'package:lpb_insurance/domain/repositories/sign_up_repository.dart'
+    as _i783;
 import 'package:lpb_insurance/domain/use_cases/login_usecase.dart' as _i974;
+import 'package:lpb_insurance/domain/use_cases/sign_up_usecase.dart' as _i596;
 import 'package:lpb_insurance/presentation/common/toast/toast_widget.dart'
     as _i803;
 import 'package:lpb_insurance/presentation/screens/login/cubit/login_cubit.dart'
     as _i304;
+import 'package:lpb_insurance/presentation/screens/sign_up/confirm_otp_sign_up/cubit/confirm_otp_sign_up_cubit.dart'
+    as _i934;
+import 'package:lpb_insurance/presentation/screens/sign_up/sign_up_new_account/cubit/sign_up_cubit.dart'
+    as _i476;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 const String _uat = 'uat';
@@ -74,8 +82,18 @@ extension GetItInjectableX on _i174.GetIt {
           apiService: gh<_i669.ApiService>(),
           localStorage: gh<_i243.LocalStorage>(),
         ));
+    gh.factory<_i783.SignUpRepository>(() => _i546.SignUpRepositoryImpl(
+          apiService: gh<_i669.ApiService>(),
+          localStorage: gh<_i243.LocalStorage>(),
+        ));
+    gh.factory<_i596.SignUpUseCase>(() =>
+        _i596.SignUpUseCase(signUpRepository: gh<_i783.SignUpRepository>()));
     gh.factory<_i974.LoginUseCase>(
         () => _i974.LoginUseCase(loginRepository: gh<_i6.LoginRepository>()));
+    gh.factory<_i476.SignUpCubit>(
+        () => _i476.SignUpCubit(signUpUseCase: gh<_i596.SignUpUseCase>()));
+    gh.factory<_i934.ConfirmOtpSignUpCubit>(() =>
+        _i934.ConfirmOtpSignUpCubit(signUpUseCase: gh<_i596.SignUpUseCase>()));
     gh.factory<_i304.LoginCubit>(
         () => _i304.LoginCubit(loginUseCase: gh<_i974.LoginUseCase>()));
     return this;

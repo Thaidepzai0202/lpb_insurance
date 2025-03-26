@@ -123,6 +123,8 @@ abstract class _NIXOThemeColor {
   final Color gray200 = HexColor.fromHex('#E2E8F0');
   final Color gray100 = HexColor.fromHex('#EDF2F7');
   final Color gray50 = HexColor.fromHex('#F7FAFC');
+  final Color gray3 = HexColor.fromHex('#D9D9D9');
+  final Color gray4 = HexColor.fromHex('#818181');
 
   /// Custom color
   final Color c1 = HexColor.fromHex('#009846');
@@ -130,8 +132,15 @@ abstract class _NIXOThemeColor {
   final Color pureWhite = HexColor.fromHex('#f6f6f6');
   final Color white = HexColor.fromHex('#FFFFFF');
 
+  //------primary
+  //orange
+  final Color primaryOrange = HexColor.fromHex('#F7911A');
+  final Color lpbColor = HexColor.fromHex('#633119');
+
+
+
   //text normal
-  final Color textNormal = HexColor.fromHex('#594B45');
+  final Color textNormal = HexColor.fromHex('#181818');
   final Color blackPrimary = HexColor.fromHex('#000000');
 
   //pink

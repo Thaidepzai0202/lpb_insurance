@@ -3,6 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:lpb_insurance/presentation/screens/login/login_route.dart';
+import 'package:lpb_insurance/presentation/screens/sign_up/sign_up_new_account/sign_up_route.dart';
 
 import '../../generated/l10n.dart';
 import '../../manifest.dart';
@@ -17,8 +18,8 @@ class Application extends StatefulWidget {
 }
 
 class _ApplicationState extends State<Application> {
-  String initRoute = LoginRoute().routeName;
-  // String initRoute = TransactionDetailsRoute().routeName;
+  // String initRoute = LoginRoute().routeName;
+  String initRoute = SignUpRoute().routeName;
 
   @override
   void initState() {

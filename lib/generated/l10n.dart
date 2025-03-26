@@ -59,6 +59,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Đăng ký`
+  String get signup {
+    return Intl.message(
+      'Đăng ký',
+      name: 'signup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tên đăng nhập`
+  String get user_account {
+    return Intl.message(
+      'Tên đăng nhập',
+      name: 'user_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mã giới thiệu`
+  String get referral_code {
+    return Intl.message(
+      'Mã giới thiệu',
+      name: 'referral_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Số điện thoại`
+  String get phone_number {
+    return Intl.message(
+      'Số điện thoại',
+      name: 'phone_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nhập mã giới thiệu`
+  String get enter_referral_code {
+    return Intl.message(
+      'Nhập mã giới thiệu',
+      name: 'enter_referral_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quên mật khẩu?`
+  String get forgot_password {
+    return Intl.message(
+      'Quên mật khẩu?',
+      name: 'forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Đăng nhập`
+  String get sign_in {
+    return Intl.message(
+      'Đăng nhập',
+      name: 'sign_in',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nhập mã OTP`
+  String get input_OTP {
+    return Intl.message(
+      'Nhập mã OTP',
+      name: 'input_OTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mã OTP được gửi về số điện thoại KH đăng ký`
+  String get otp_is_send_to_the_phone {
+    return Intl.message(
+      'Mã OTP được gửi về số điện thoại KH đăng ký',
+      name: 'otp_is_send_to_the_phone',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

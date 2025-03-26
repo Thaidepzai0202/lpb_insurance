@@ -22,6 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "no_data": MessageLookupByLibrary.simpleMessage("Không có dữ liệu")
+        "enter_referral_code":
+            MessageLookupByLibrary.simpleMessage("Nhập mã giới thiệu"),
+        "forgot_password":
+            MessageLookupByLibrary.simpleMessage("Quên mật khẩu?"),
+        "input_OTP": MessageLookupByLibrary.simpleMessage("Nhập mã OTP"),
+        "no_data": MessageLookupByLibrary.simpleMessage("Không có dữ liệu"),
+        "otp_is_send_to_the_phone": MessageLookupByLibrary.simpleMessage(
+            "Mã OTP được gửi về số điện thoại KH đăng ký"),
+        "phone_number": MessageLookupByLibrary.simpleMessage("Số điện thoại"),
+        "referral_code": MessageLookupByLibrary.simpleMessage("Mã giới thiệu"),
+        "sign_in": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
+        "signup": MessageLookupByLibrary.simpleMessage("Đăng ký"),
+        "user_account": MessageLookupByLibrary.simpleMessage("Tên đăng nhập")
       };
 }

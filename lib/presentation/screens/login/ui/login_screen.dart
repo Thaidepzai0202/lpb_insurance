@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lpb_insurance/presentation/screens/sign_up/sign_up_new_account/sign_up_route.dart';
 
 import '../../../../utilities/style/style.dart';
 import '../../../common/app_scaffold_widget.dart';
@@ -46,13 +47,14 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         InkWell(
           onTap: () {
+            SignUpRoute.push();
           },
           child: Center(
             child: Container(
               width: 250,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                  color: theme.color.pinkPrimary,
+                  color: theme.color.blackPrimary,
                   borderRadius: BorderRadius.circular(20)),
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
               child: Text(

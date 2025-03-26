@@ -23,5 +23,6 @@ class Assets {
   static const String iconsInfo = 'assets/icons/info.svg';
   static const String iconsSuccessOutline = 'assets/icons/success_outline.svg';
   static const String iconsWarning = 'assets/icons/warning.svg';
+  static const String imagesBackgroundInsurance = 'assets/images/background_insurance.png';
 
 }
