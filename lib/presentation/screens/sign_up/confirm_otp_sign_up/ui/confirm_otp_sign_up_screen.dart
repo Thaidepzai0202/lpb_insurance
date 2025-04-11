@@ -6,6 +6,7 @@ import 'package:lpb_insurance/presentation/common/app_scaffold_widget.dart';
 import 'package:lpb_insurance/presentation/common/text_field/common_text_field.dart';
 import 'package:lpb_insurance/presentation/common/text_field/textfield_widget.dart';
 import 'package:lpb_insurance/presentation/screens/sign_up/confirm_otp_sign_up/cubit/confirm_otp_sign_up_cubit.dart';
+import 'package:lpb_insurance/presentation/screens/sign_up/set_up_pass_word/set_up_pass_word_route.dart';
 import 'package:lpb_insurance/utilities/style/style.dart';
 
 import '../../../../../generated/l10n.dart';
@@ -67,7 +68,8 @@ class _ConfirmOtpSignUpScreenState extends State<ConfirmOtpSignUpScreen> {
               keyboardType: TextInputType.number,
               valueChanged: (text) {
                 if (text.length == 6) {
-                  Navigator.pop(context);
+                  // Navigator.pop(context);
+                  SetUpPassWordRoute.push();
                 }
               },
             )

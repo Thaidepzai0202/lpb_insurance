@@ -149,6 +149,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Nhập mật khẩu mới`
+  String get input_new_pass {
+    return Intl.message(
+      'Nhập mật khẩu mới',
+      name: 'input_new_pass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nhập mật lại khẩu mới`
+  String get input_new_pass_again {
+    return Intl.message(
+      'Nhập mật lại khẩu mới',
+      name: 'input_new_pass_again',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mật khẩu mới đảm bảo`
+  String get new_pass_ensure {
+    return Intl.message(
+      'Mật khẩu mới đảm bảo',
+      name: 'new_pass_ensure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mật khẩu phải từ 8 ký tự trở lên`
+  String get password_length {
+    return Intl.message(
+      'Mật khẩu phải từ 8 ký tự trở lên',
+      name: 'password_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Có ít nhất một chữ viết thường`
+  String get password_lowercase {
+    return Intl.message(
+      'Có ít nhất một chữ viết thường',
+      name: 'password_lowercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Có ít nhất một chữ viết hoa`
+  String get password_uppercase {
+    return Intl.message(
+      'Có ít nhất một chữ viết hoa',
+      name: 'password_uppercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Có ít nhất một chữ số`
+  String get password_digit {
+    return Intl.message(
+      'Có ít nhất một chữ số',
+      name: 'password_digit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Có ít nhất một ký tự đặc biệt`
+  String get password_special {
+    return Intl.message(
+      'Có ít nhất một ký tự đặc biệt',
+      name: 'password_special',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

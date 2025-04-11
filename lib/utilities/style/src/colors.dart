@@ -125,6 +125,7 @@ abstract class _NIXOThemeColor {
   final Color gray50 = HexColor.fromHex('#F7FAFC');
   final Color gray3 = HexColor.fromHex('#D9D9D9');
   final Color gray4 = HexColor.fromHex('#818181');
+  final Color gray6 = HexColor.fromHex('#393939');
 
   /// Custom color
   final Color c1 = HexColor.fromHex('#009846');

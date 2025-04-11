@@ -8,6 +8,8 @@ class Assets {
   static const String iconsArrowLeft = 'assets/icons/arrow_left.svg';
   static const String iconsClearTextField = 'assets/icons/clear_text_field.svg';
   static const String iconsClose = 'assets/icons/close.svg';
+  static const String iconsDoneVSmall = 'assets/icons/done_v_small.svg';
+  static const String iconsErrorXSmall = 'assets/icons/error_x_small.svg';
   static const String iconsEyeOff = 'assets/icons/eye_off.svg';
   static const String iconsEyeOn = 'assets/icons/eye_on.svg';
   static const String iconsIcBack = 'assets/icons/ic_back.svg';

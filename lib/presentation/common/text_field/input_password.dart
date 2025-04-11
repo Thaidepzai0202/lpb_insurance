@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:lpb_insurance/presentation/common/text_field/common_text_field.dart';
 import '../../../generated/assets.dart';
 import '../../../utilities/style/style.dart';
 import '../load_image/load_image.dart';
-import 'textfield_widget.dart';
 
-class PasswordTextField extends StatefulWidget {
+
+class InputPassword extends StatefulWidget {
   final String? label;
   final bool autofocus;
   final TextEditingController? controller;
@@ -15,7 +16,7 @@ class PasswordTextField extends StatefulWidget {
   final VoidCallback? onClear;
   final bool? required;
 
-  const PasswordTextField({
+  const InputPassword({
     super.key,
     this.label,
     this.autofocus = false,
@@ -29,17 +30,18 @@ class PasswordTextField extends StatefulWidget {
   });
 
   @override
-  State<PasswordTextField> createState() => _PasswordTextFieldState();
+  State<InputPassword> createState() => _PasswordTextFieldState();
 }
 
-class _PasswordTextFieldState extends State<PasswordTextField> {
+class _PasswordTextFieldState extends State<InputPassword> {
   bool _enable = true;
 
   @override
   Widget build(BuildContext context) {
     theme.registerNotifyUpdated(context);
 
-    return AppTextField(
+    return CommonTextField(
+      height: 52,
       label: widget.label,
       controller: widget.controller,
       autofocus: widget.autofocus,
@@ -59,7 +61,7 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
         child: Padding(
           padding: const EdgeInsets.only(right: 8),
           child: LoadImage(
-            url: _enable ? Assets.iconsEyeOn : Assets.iconsEyeOff,
+            url: !_enable ? Assets.iconsEyeOn : Assets.iconsEyeOff,
             colors: theme.color.b20,
           ),
         ),

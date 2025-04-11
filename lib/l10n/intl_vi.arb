@@ -8,5 +8,15 @@
   "forgot_password": "Quên mật khẩu?",
   "sign_in": "Đăng nhập",
   "input_OTP": "Nhập mã OTP",
-  "otp_is_send_to_the_phone": "Mã OTP được gửi về số điện thoại KH đăng ký"
+  "otp_is_send_to_the_phone": "Mã OTP được gửi về số điện thoại KH đăng ký",
+
+  "input_new_pass": "Nhập mật khẩu mới",
+  "input_new_pass_again": "Nhập mật lại khẩu mới",
+  "new_pass_ensure": "Mật khẩu mới đảm bảo",
+  "password_length": "Mật khẩu phải từ 8 ký tự trở lên",
+  "password_lowercase": "Có ít nhất một chữ viết thường",
+  "password_uppercase": "Có ít nhất một chữ viết hoa",
+  "password_digit": "Có ít nhất một chữ số",
+  "password_special": "Có ít nhất một ký tự đặc biệt"
+
 }

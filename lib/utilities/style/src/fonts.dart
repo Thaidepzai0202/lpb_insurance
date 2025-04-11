@@ -175,6 +175,11 @@ class _NIXOThemeFont {
       fontSize: 14,
       color: HexColor.fromHex('#181818'));
 
+  final TextStyle text14s = GoogleFonts.mulish().copyWith(
+      fontWeight: FontWeight.w700,
+      fontSize: 14,
+      color: HexColor.fromHex('#181818'));
+
   final TextStyle text16s = GoogleFonts.mulish().copyWith(
       fontWeight: FontWeight.w700,
       fontSize: 16,

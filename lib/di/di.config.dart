@@ -36,6 +36,8 @@ import 'package:lpb_insurance/presentation/screens/login/cubit/login_cubit.dart'
     as _i304;
 import 'package:lpb_insurance/presentation/screens/sign_up/confirm_otp_sign_up/cubit/confirm_otp_sign_up_cubit.dart'
     as _i934;
+import 'package:lpb_insurance/presentation/screens/sign_up/set_up_pass_word/cubit/set_up_pass_word_cubit.dart'
+    as _i619;
 import 'package:lpb_insurance/presentation/screens/sign_up/sign_up_new_account/cubit/sign_up_cubit.dart'
     as _i476;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
@@ -94,6 +96,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i476.SignUpCubit(signUpUseCase: gh<_i596.SignUpUseCase>()));
     gh.factory<_i934.ConfirmOtpSignUpCubit>(() =>
         _i934.ConfirmOtpSignUpCubit(signUpUseCase: gh<_i596.SignUpUseCase>()));
+    gh.factory<_i619.SetUpPassWordCubit>(() =>
+        _i619.SetUpPassWordCubit(signUpUseCase: gh<_i596.SignUpUseCase>()));
     gh.factory<_i304.LoginCubit>(
         () => _i304.LoginCubit(loginUseCase: gh<_i974.LoginUseCase>()));
     return this;

@@ -27,9 +27,25 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Quên mật khẩu?"),
         "input_OTP": MessageLookupByLibrary.simpleMessage("Nhập mã OTP"),
+        "input_new_pass":
+            MessageLookupByLibrary.simpleMessage("Nhập mật khẩu mới"),
+        "input_new_pass_again":
+            MessageLookupByLibrary.simpleMessage("Nhập mật lại khẩu mới"),
+        "new_pass_ensure":
+            MessageLookupByLibrary.simpleMessage("Mật khẩu mới đảm bảo"),
         "no_data": MessageLookupByLibrary.simpleMessage("Không có dữ liệu"),
         "otp_is_send_to_the_phone": MessageLookupByLibrary.simpleMessage(
             "Mã OTP được gửi về số điện thoại KH đăng ký"),
+        "password_digit":
+            MessageLookupByLibrary.simpleMessage("Có ít nhất một chữ số"),
+        "password_length": MessageLookupByLibrary.simpleMessage(
+            "Mật khẩu phải từ 8 ký tự trở lên"),
+        "password_lowercase": MessageLookupByLibrary.simpleMessage(
+            "Có ít nhất một chữ viết thường"),
+        "password_special": MessageLookupByLibrary.simpleMessage(
+            "Có ít nhất một ký tự đặc biệt"),
+        "password_uppercase":
+            MessageLookupByLibrary.simpleMessage("Có ít nhất một chữ viết hoa"),
         "phone_number": MessageLookupByLibrary.simpleMessage("Số điện thoại"),
         "referral_code": MessageLookupByLibrary.simpleMessage("Mã giới thiệu"),
         "sign_in": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
